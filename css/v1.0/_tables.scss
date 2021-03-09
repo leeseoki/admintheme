@@ -1,0 +1,29 @@
+.table {
+  &-set--min-width {
+    th,
+    td {
+      min-width: $table-col-min-width;
+
+      &:first-child {
+        min-width: $table-col-min-width/2;
+      }
+    }
+  }
+
+  &-bordered--left-right {
+    th {
+      border-right: 1px solid $border-color;
+
+      &:last-child {
+        border-right: 0 none;
+      }
+    }
+  }
+}
+
+.table-light {
+  th {
+    background: $light-blue;
+    font-weight: $font-weight-normal;
+  }
+}

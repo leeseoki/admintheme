@@ -1,0 +1,23 @@
+[class*="sidebar-dark-"] {
+  .user-panel {
+    border-bottom: 0 none;
+  }
+
+  .nav-sidebar {
+    margin: 0 -8px;
+
+    & > .nav-item {
+      border-bottom: 1px solid $sidebar-dark-bg;
+
+      &:last-child {
+        border-bottom: 0 none;
+      }
+
+      & > .nav-link {
+        margin-bottom: 0;
+        background: $dark-blue;
+        border-radius: 0;
+      }
+    }
+  }
+}

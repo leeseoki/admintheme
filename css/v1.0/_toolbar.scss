@@ -1,0 +1,30 @@
+.toolbar {
+  .pagination {
+    margin: 0 $spacer 0 0;
+  }
+}
+
+.pagination-radius {
+  .page-item {
+    margin: 0 5px;
+  }
+
+  .page-link {
+    border-radius: 100%;
+    min-width: 40px;
+    text-align: center;
+    color: $toolbar-link-color;
+    background: $toolbar-link-bg;
+
+    &:first-child,
+    &:last-child {
+      border-radius: 100%;
+    }
+
+    &.current {
+      background: $toolbar-link-bg--active;
+      border-color: $toolbar-link-bg--active;
+      color: $toolbar-link-color--active;
+    }
+  }
+}

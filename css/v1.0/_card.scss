@@ -1,0 +1,16 @@
+.card {
+  box-shadow: none;
+
+  &-footer {
+    background: $light-blue;
+    border: 0 none;
+
+    &:last-child {
+      border-radius: 0;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

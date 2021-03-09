@@ -1,0 +1,27 @@
+// block alignment-baseline:
+.block-align {
+  display: flex;
+  align-items: center;
+
+  &--left {
+    justify-content: flex-start;
+  }
+
+  &--right {
+    justify-content: flex-end;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--justify {
+    justify-content: space-between;
+  }
+
+  &--item-stretch {
+    > div {
+      flex-grow: 1;
+    }
+  }
+}
